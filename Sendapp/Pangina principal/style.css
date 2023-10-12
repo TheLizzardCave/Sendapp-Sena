@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --verde: #39a900;
+    --blanco: #fff;
+    --negro: #000;
+    --gris-oscuro: #c7c7c7;
+    --gris-claro: #f7f7f7;
+    --fuente-poppins: 'Poppins', sans-serif;
+    --fuente-open-sans: 'Open Sans', sans-serif;
+}
+
+
+
+ /* imagen logo de sendapp */
+.logo img{
+    width: auto;
+    height: 7vw;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+/* Nombre de Sendapp*/
+.name{
+    display: flex;
+    justify-content: center;
+}
+
+.name h1{
+    font-family:var(--fuente-open-sans);
+    color: var(--verde)
+}
+
+/* Navegador */
+
+.navbar {
+    margin: 0 25px 0 25px;
+    background-color: var(--verde);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+
+.links li a{
+    text-decoration: none;
+    color: var(--negro);
+    font-family: var(--fuente-poppins);
+    font-size: 30px;
+}
+
+.links li a:hover {
+    color: var(--gris-claro);
+
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    width: 98%; /* Ocupar todo el ancho del contenedor nav */
+    height: 90%; /* Ocupar todo el alto del contenedor nav */
+
+}
+
+
+/* Menu hamburguesa 😛 */
+#menu-hamburguesa img{
+    width: 3vw;
+    height: 3vw;
+    
+}
+
+#menu-hamburguesa {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    margin: 20px;
+}
+/* Logo del sena en nav */
+#img-logo{
+    width: 4vw;
+    height: 4vw;
+    margin: 20px;       
+}
+
+
+/* ----------------------------------------------------- */
+
+/* Estilo para ocultar el contenido del menú desplegable por defecto */
+.areas-mas,
+.areas-bienestar {
+    display: none;
+}
+
+/* Estilo para mostrar el menú desplegable al hacer hover */
+li:hover .areas-mas{
+    display: block;
+    position: absolute;
+    background-color: var(--verde);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.areas-mas li:hover .areas-bienestar {
+    display: block;
+    background-color: var(--verde);
+    list-style: none;
+    padding: 0;
+    margin-left: 332px;
+    margin-bottom: 10px;
+    color: #f7f7f7;
+    width: auto;
+}
+
+
+
+
+/* Estilos para los elementos de los menús desplegables */
+.areas-mas a,
+.areas-bienestar a {
+    display: block;
+    text-decoration: none;
+    color: var(--negro);
+
+}
+
+
+
+/* Estilos para los elementos de los menús desplegables al pasar el ratón por encima */
+.areas-mas a:hover,
+.areas-bienestar a:hover {
+    color: var(--negro);
+}
+
+
+/* Estilos para el menú "Áreas" */
+.areas-mas {
+    display: none;
+    position: absolute;
+    background-color: var(--verde);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* Estilos para el menú "Bienestar al aprendiz" */
+.areas-bienestar {
+    display: none;
+    position: absolute;
+    background-color: var(--verde);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+

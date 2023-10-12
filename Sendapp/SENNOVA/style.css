@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat&family=Lobster&family=Open+Sans:wght@300&family=Roboto&display=swap');
+:root{
+    --verde: #39a900;
+    --blanco: #fff;
+    --negro: #000;
+    --gris-oscuro: #c7c7c7;
+    --gris-calro: #f7f7f7;
+    --fuente-poppins: 'Poppins', sans-serif;
+    --fuente-open-sans: 'Open Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 8%;
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+.iconos-container, .footer-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+/*toda la parte que dice icono red es de los iconos*/
+.icono-red{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    background-image: url(icons8-facebook-nuevo-48.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+.icono-red:hover{
+    background-color: var(--negro);
+    /*filter: invert(1);*/
+    
+}
+.icono-red:nth-last-of-type(2){
+    background-image: url(icons8-instagram-64.png);
+}
+.icono-red:nth-last-of-type(3){
+    background-image: url(icons8-twitter-circled-48.png);
+}
+.icono-red:nth-last-of-type(4){
+    background-image: url(icons8-youtube-24.png);
+}
+.icono-red:nth-last-of-type(5){
+    background-image: url(icons8-linkedin-48.png);
+}
+/* esta parte es para la parte del apartado de pqrs etc*/
+.footer-menu{
+    list-style-type: none;
+    color: var(--negro);
+    font-size: 18px;
+}
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.menu-item:hover{
+    opacity: 1;
+}
